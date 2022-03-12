@@ -111,6 +111,7 @@ footer {
 .menu__item a:hover{
     background-color: #343434;
     color: white;
+    border-radius:6px ;
 }
 
 
