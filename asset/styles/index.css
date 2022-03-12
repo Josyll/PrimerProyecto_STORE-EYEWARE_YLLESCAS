@@ -108,6 +108,10 @@ footer {
     
 }
 
+.menu__item a:hover{
+    background-color: #343434;
+    color: white;
+}
 
 
 
@@ -161,6 +165,7 @@ footer {
     height: 50px;
     line-height: 50px;
     font-size: 15px;
+    background: linear-gradient(to right, black, white);
 
 }
 
