@@ -1,0 +1,674 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HELPERS */
+
+.flex-row {
+    display: flex;
+}
+
+
+
+html {
+    font-size: 62.5%;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+
+
+
+
+/* ###########GRID "BODY"############# */
+body {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f2f2f2;
+    display: grid;
+    grid-template-columns: 3 1fr;
+    grid-template-rows: 3 1fr;
+    
+}
+
+
+
+header {
+    grid-template-columns: 1/4;
+    grid-template-rows: 1;
+    /* grid-area: header; */
+    background-color: white;
+
+}
+
+main {
+    grid-template-columns: 1/4;
+    grid-template-rows: 2;
+    /* grid-area: main; */
+}
+
+footer {
+    grid-template-columns: 1/4;
+    grid-template-rows: 3;
+    /* grid-area: footer; */
+
+}
+
+
+
+/* ###########INDEX########## */
+/* NAV */
+.navbar {
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0 20px;
+    height: 70px;
+    justify-content: space-between;
+    align-items:center ;
+    color: #343434;
+
+}
+
+
+.logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.menu{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    
+}
+.menu li {
+    padding: 0 1rem;
+}
+
+
+
+.menu__item a {
+    padding: 0.3125em;
+    color: inherit;
+    transition: 0.2s ease-in-out;
+    font-size: 12px;
+    
+}
+
+
+
+
+
+
+
+/*----MAIN------*/
+
+.background__index {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    background: url(../img/img_main/backgroundIndex.png)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.banner__container {
+    width:100%;
+    height: 480px;
+    
+    
+}
+.banner__container img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;    
+    
+}
+
+
+
+.banner__container .banner__tittle {
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 20px;    
+}
+
+
+
+
+
+.tittle-main{
+    color:white;
+    background-color: #222020;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 15px;
+
+}
+
+
+
+
+/* SECCION CONTENIDO */
+/* cards */
+.card-flex {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.125em;
+    margin-top: 3.125em;
+    gap: 1.25rem;
+}
+
+.card-producto {
+    width: 25rem;
+    /* box-shadow: 0 0 5px #343434; */
+
+}
+
+
+
+.card-container {
+    background-color: white;
+    width: inherit;
+    height: 19.125rem;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    
+
+
+}
+
+.card-container:hover {
+    opacity: 0.7;
+
+
+
+}
+
+.card-img {
+    width: 14rem;
+    height: 14rem;
+    object-fit: contain;
+
+}
+
+.container-price {
+    background-color: white;
+    width: inherit;
+    height: 8.5rem;
+    border-top: rgba(51, 51, 51, .1) solid 1px;
+    padding: 0.625rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.container-price .price-null {
+    text-decoration: line-through;
+    font-size: 12px;
+
+}
+
+
+.price-act .price {
+    font-size: 18px;
+
+}
+
+.price-act .price-desc {
+    color: #39b54a;
+    font-size: small;
+    padding: 1rem;
+}
+
+.price-interes {
+    font-size: smaller;
+}
+
+/* FIN CARDS */
+
+/* INFO COMPRA */
+
+
+.info-slide {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width:100%;
+
+}
+
+.info__item {
+    width: 30rem;
+    height: 16rem;
+    text-align: center;
+    padding-top: 20px;
+
+}
+
+.info__item img{
+    width: 56px;
+    height: 49px;
+}
+
+.info__item h3 {
+    font-size: 15px;
+    text-align: center;
+
+}
+
+.info__item p {
+    font-size: 12px;
+    text-align: center;
+
+}
+
+
+.info__item2 {
+    width: 30rem;
+    height: 16rem;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.info__item2 h3 {
+    font-size: 15px;
+    text-align: center;
+}
+
+.info__item2 p {
+    font-size: 12px;
+    text-align: center;
+}
+
+
+
+/* FOOTER*/
+footer{
+    background-color: #343434;
+    width: 100%;
+    height: 10rem;
+}
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center ;
+    padding: 10px;
+    
+    
+    background-color: #343434;
+
+}
+
+
+
+.footer-redes ul {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;    
+    text-align: center;
+    font-size: smaller;
+    width: 200px;
+    
+}
+
+.footer-redes ul li img{
+    width: 100%;
+    height:100% ;
+}
+
+.footer-redes ul li {
+    margin: 0 20px;
+    
+}
+
+
+
+.footer-nav {
+    width: 100%;
+    height: 3.75rem;
+    padding: 10x 0;
+    margin: 0 auto;
+    color: white;
+
+}
+
+.footer-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    
+    padding: 12px;
+    
+}
+
+.footer-nav ul li {
+    display: inline-block;
+    margin: 0 30px;
+   
+    padding: 5px;
+
+}
+
+.footer-nav ul li a {
+    list-style: none;
+    color: inherit;
+}
+
+/*############################ FIN INDEX########################### */
+
+/* ==========================GAFAS DE SOL================================== */
+
+/* FORMATO GRID  BODY */
+
+/* Clase .banner__container en HELPERS  */
+
+.banner__sunglass img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/*  GAFAS DE SOL- FORM Y PRODUCTOS - FLEBOX */
+/* FORM */
+
+.mainFormProduct {
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    /* background-color: aquamarine; */
+
+}
+
+.formContainer {
+    background-color: white;
+    width: 100%;
+    
+    
+}
+
+.formContainer form{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* box-shadow: 0 0 20px #343434; */
+
+}
+
+
+.formContainer__box {
+    padding: 30px;
+    /* border-top: rgba(51, 51, 51, .1) solid 1px; */
+
+}
+
+/* cards product */
+.cardFlexProduct {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.125em;
+    margin-top: 3.125em;
+    gap: 1.25rem;
+
+}
+
+.cardContainer {
+    width: 25rem;
+    /* box-shadow: 0 0 5px #343434; */
+
+}
+
+
+
+.cardItem {
+    background-color: white;
+    width: inherit;
+    height: 19.125rem;
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+
+}
+
+.cardItem:hover {
+    opacity: 0.7;
+
+
+
+}
+
+.cardImg {
+    width: 14rem;
+    height: 14rem;
+    object-fit: contain;
+
+}
+
+.priceContainer {
+    background-color: white;
+    width: inherit;
+    height: 8.5rem;
+    border-top: rgba(51, 51, 51, .1) solid 1px;
+    padding: 0.625rem;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.priceContainer .priceNull {
+    text-decoration: line-through;
+    font-size: 12px;
+
+}
+
+
+.priceHot .price {
+    font-size: 18px;
+
+}
+
+.priceHot .priceDesc {
+    color: #39b54a;
+    font-size: small;
+    padding: 1rem;
+}
+
+.priceInteres {
+    font-size: smaller;
+}
+
+/* FIN CARDS */
+
+/*=========================FIN GAFAS DE SOL========================= */
+
+/*=========================CSS GAFAS========================= */
+.banner__glass img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/*========================= CSS ABOUT US========================= */
+
+.banner__about {
+    width: 100%;
+    height: 100%;
+    
+}
+
+.banner__about img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* Contenido About */
+.about__container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 50px auto;
+    font-size: 14px;
+}
+
+.aboutus {
+    margin: 30px 0;
+}
+
+.aboutus p {
+    margin: 0 50px;
+    
+}
+
+/*========================= FIN CSS ABOUT US========================= */
+
+/*=========================CSS NEWSLETTER========================= */
+/* -- Formulario login y Suscripcion--   */
+
+
+.newsletter__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
+
+
+/* formularios */
+
+
+.form ul li{
+    border-radius: 6px ;
+}
+
+.log {
+    margin: 30px 0;   
+    
+}
+
+.log__ico {
+    width: 20px;
+}
+
+.news{
+    margin: 30px 0;
+}
+/*========================= FIN CSS NEWSLETTER========================= */
+
+/* CONDICIONALES */
+/* @media screen and (min-width:300px){
+    .navbar {
+        justify-content: center;
+        align-items: center;
+        background-color: #39b54a;
+    }
+} */
+@media screen and (max-width:768px) {
+    .banner__container {
+        width:100%;
+        height: 380px;
+        
+        
+    }
+    .banner__container img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;    
+        
+    }
+
+       
+}
+
+
+@media screen and (max-width:576px) {
+    .navbar {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    }
+
+    .banner__container {
+        width:100%;
+        height: 280px;
+       
+        
+    }
+    .banner__container img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;    
+        
+    }
+
+       
+}
+
+@media screen and (max-width:406px) {
+    .navbar {
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    }
+    .menu__item a{
+        font-size: 10px;
+    }    
+}
+
+@media screen and (max-width:360px){
+    .menu__item a{
+        font-size: 10px;
+    }
+}
+
+
+
