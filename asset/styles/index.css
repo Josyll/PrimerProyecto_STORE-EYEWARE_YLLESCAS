@@ -668,12 +668,18 @@ footer{
     .menu__item a{
         font-size: 10px;
     }    
+
+    footer{
+        height: 13rem;
+    }
 }
 
 @media screen and (max-width:360px){
     .menu__item a{
         font-size: 10px;
     }
+
+
 }
 
 
