@@ -32,6 +32,7 @@ a {
 
 
 
+
 /* ###########GRID "BODY"############# */
 body {
     width: 100%;
@@ -163,7 +164,7 @@ footer {
     color:white;
     background-color: #222020;
     text-align: center;
-    height: 50px;
+    height: 25px;
     line-height: 50px;
     font-size: 15px;
     background: linear-gradient(to right, black, white);
