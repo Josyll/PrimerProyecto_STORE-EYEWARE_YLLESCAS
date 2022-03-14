@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;1,100;1,400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="./asset/styles/bootstrap.min.css">        
     <link rel="stylesheet" href="./asset/styles/index.css">
     <title>Store Eyewear</title>
 </head>
@@ -17,7 +18,48 @@
 <body>
     <header>
         <!-- NAV -->
-        <nav class="navbar flex-row">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="./index.html"><img src="./asset/img/nav_bar/store_logo.svg" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        PRODUCTOS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item" href="#">GAFAS DE SOL</a></li>
+                      <li><a class="dropdown-item" href="#">GAFAS</a></li>
+                      
+                      
+                    </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">NOSOTROS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">CONTACTENOS</a>
+                      </li>
+                  <!-- </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">CONTACTENOS</a>
+                  </li> -->
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+        <!-- <nav class="navbar flex-row">
             <picture class="logo">
                 <a href="./index.html"><img src="./asset/img/nav_bar/store_logo.svg" alt="Logo"></a>
             </picture>
@@ -29,11 +71,13 @@
                 <li class="menu__item"><a href="./asset/pages/nosotros.html">NOSOTROS</a></li>
                 <li class="menu__item"><a href="./asset/pages/contactenos.html">CONTACTENOS</a></li>
             </ul>
-        </nav>
+        </nav> -->
     </header>
 
     <!-- INICIO MAIN -->
     <main>
+        
+
         <section class="banner__container">
             <picture class="background__index">
                 <h1 class="banner__tittle">TU MEJOR OPCION PARA UN DIA SOLEADO</h1>
@@ -181,6 +225,7 @@
                 </ul>
             </div>
     </footer>
+    <script src="./asset/js/bootstrap.min.js"></script>
 
 </body>
 

@@ -32,6 +32,7 @@ a {
 
 
 
+
 /* ###########GRID "BODY"############# */
 body {
     width: 100%;
@@ -70,9 +71,9 @@ footer {
 
 /* ###########INDEX########## */
 /* NAV */
-.navbar {
+.navbar navbar-expand-lg navbar-light bg-light {
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: rcw;
     margin: 0 20px;
     height: 70px;
     justify-content: space-between;
@@ -81,6 +82,9 @@ footer {
 
 }
 
+.submit{
+    background-color: #222020;
+}
 
 .logo img{
     width: 100%;
@@ -111,6 +115,7 @@ footer {
 .menu__item a:hover{
     background-color: #343434;
     color: white;
+    border-radius:6px ;
 }
 
 
@@ -162,7 +167,7 @@ footer {
     color:white;
     background-color: #222020;
     text-align: center;
-    height: 50px;
+    height: 25px;
     line-height: 50px;
     font-size: 15px;
     background: linear-gradient(to right, black, white);
@@ -667,12 +672,18 @@ footer{
     .menu__item a{
         font-size: 10px;
     }    
+
+    footer{
+        height: 13rem;
+    }
 }
 
 @media screen and (max-width:360px){
     .menu__item a{
         font-size: 10px;
     }
+
+
 }
 
 
