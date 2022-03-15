@@ -4,32 +4,76 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;1,100;1,400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">            
     <link rel="stylesheet" href="../styles/index.css">
     <title>Gafas de Sol- Store Eyewear</title>
 </head>
 <body>
     <header>
         <!-- NAV -->
-        <nav class="navbar flex-row">
-            <picture class="logo">
-                <a href="../../index.html"><img src="../img/nav_bar/store_logo.svg" alt="Logo"></a>
-            </picture>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../../index.html"><img src="../img/nav_bar/store_logo.svg" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        PRODUCTOS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item" href="../pages/gafas_sol.html">GAFAS DE SOL</a></li>
+                      <li><a class="dropdown-item" href="../pages/gafas.html">GAFAS</a></li>
+                      
+                      
+                    </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../pages/nosotros.html">NOSOTROS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../pages/nosotros.html">CONTACTENOS</a>
+                      </li>
+                  <!-- </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">CONTACTENOS</a>
+                  </li> -->
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
 
-
-            <ul class="menu flex-row">
-                <li class="menu__item"><a href="../pages/gafas_sol.html">GAFAS DE SOL</a></li>
-                <li class="menu__item"><a href="../pages/gafas.html">GAFAS</a></li>
-                <li class="menu__item"><a href="../pages/nosotros.html">NOSOTROS</a></li>
-                <li class="menu__item"><a href="../pages/contactenos.html">CONTACTENOS</a></li>
-            </ul>
-        </nav>
+        
     </header>
 
-    <section class="banner__container">
-        <picture class="banner__sunglass">
-            <img src="../img/img_main/backgroundSun.jpg" alt="">
+<main>
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../img/img_main/sun.png" class="d-block w-100" alt="...">
+          </div>
+        </div>
+      </div>
+
+    <!-- <section class="banner__container">
+        <picture class="banner__glass">
+           <img src="../img/img_main/sun.png" alt="">
         </picture>
-    </section>
+    </section> -->
 
     <!-- Tittle -->
     <div class="tittle-main">
@@ -294,6 +338,10 @@
             </article>
         </section>    
 
+</main>    
+
+
+    
     <footer>
         <section class="footer-container">
 
@@ -313,5 +361,6 @@
                 </ul>
             </div>
     </footer>
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 </html>

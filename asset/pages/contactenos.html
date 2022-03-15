@@ -10,6 +10,7 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;1,100;1,400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">     
     <link rel="stylesheet" href="../styles/index.css">
     <title>Contactenos- Store Eyewear</title>
 </head>
@@ -17,32 +18,110 @@
 <body>
     <header>
         <!-- NAV -->
-        <nav class="navbar flex-row">
-            <picture class="logo">
-                <a href="../../index.html"><img src="../img/nav_bar/store_logo.svg" alt="Logo"></a>
-            </picture>
-
-
-            <ul class="menu flex-row">
-                <li class="menu__item"><a href="../pages/gafas_sol.html">GAFAS DE SOL</a></li>
-                <li class="menu__item"><a href="../pages/gafas.html">GAFAS</a></li>
-                <li class="menu__item"><a href="../pages/nosotros.html">NOSOTROS</a></li>
-                <li class="menu__item"><a href="../pages/contactenos.html">CONTACTENOS</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="../../index.html"><img src="../img/nav_bar/store_logo.svg" alt=""></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarScroll">
+                <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+                  
+                  <li class="nav-item">
+                    <a class="nav-link" href="#"></a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#" id="navbarScrollingDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        PRODUCTOS
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                      <li><a class="dropdown-item" href="../pages/gafas_sol.html">GAFAS DE SOL</a></li>
+                      <li><a class="dropdown-item" href="../pages/gafas.html">GAFAS</a></li>
+                      
+                      
+                    </ul>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../pages/nosotros.html">NOSOTROS</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../pages/contactenos.html">CONTACTENOS</a>
+                      </li>
+                  <!-- </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">CONTACTENOS</a>
+                  </li> -->
+                </ul>
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </header>
 
     <main>
-        
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../img/img_main/contacto.png" class="d-block w-100" alt="...">
+              </div>
+            </div>
+          </div>
 
         <!-- Tittle -->
         <div class="tittle-main">
-            <h3>Suscribite</h3>
+            <h3>Contáctenos</h3>
         </div>
 
         <!-- Formulario login-->
         <section class="newsletter__container">
-            <div class="log">
+
+            <form class="row g-3">
+                <div class="col-md-6">
+                  <label for="inputEmail4" class="form-label">Email</label>
+                  <input type="email" class="form-control" id="inputEmail4">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputPassword4" class="form-label">Password</label>
+                  <input type="password" class="form-control" id="inputPassword4">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress" class="form-label">Address</label>
+                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                </div>
+                <div class="col-12">
+                  <label for="inputAddress2" class="form-label">Address 2</label>
+                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputCity" class="form-label">City</label>
+                  <input type="text" class="form-control" id="inputCity">
+                </div>
+                <div class="col-md-4">
+                  <label for="inputState" class="form-label">State</label>
+                  <select id="inputState" class="form-select">
+                    <option selected>Choose...</option>
+                    <option>...</option>
+                  </select>
+                </div>
+                <div class="col-md-2">
+                  <label for="inputZip" class="form-label">Zip</label>
+                  <input type="text" class="form-control" id="inputZip">
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                    <label class="form-check-label" for="gridCheck">
+                      Check me out
+                    </label>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-primary">Sign in</button>
+                </div>
+              </form>
+            <!-- <div class="log">
                 <h3 class="news__tittle"><img class="log__ico" src="../img/nav_bar/icon_logo.svg" alt=""> Login</h3>
                 <form class="form">
                     <ul>
@@ -52,32 +131,11 @@
                     <input class="cta__form" type="reset">
                     <input class="cta__form" type="submit">
                 </form>
-            </div>
+            </div> -->
 
             <!--Formulario Suscripcion  -->
 
-            <div class="news">
-                <h2>Suscribite</h2>
-                <h3>Agrega tus datos</h3>
-
-                <form class="news__form">
-
-                    <input type="text" id=name minlength="4" required placeholder="Nombre y Apellido">
-                    <br><br>
-
-                    <input type="email" id=name required placeholder="Email">
-                    <br><br>
-
-                    <input type="number" id=number required placeholder="Número de telf">
-
-                    <h3 class="news__tittle">Agrega comentarios</h3>
-                    <Textarea class="textarea" cols="25" rows="5"></Textarea>
-                    <br>
-                    <input class="cta__form" type="reset">
-                    <input class="cta__form" type="submit" value="Enviar">
-
-                </form>
-            </div>
+            
         </section>
 
     </main>
@@ -102,6 +160,6 @@
                 </ul>
             </div>
     </footer>
-../
+    <script src="../js/bootstrap.min.js"></script>
 
 </html>
