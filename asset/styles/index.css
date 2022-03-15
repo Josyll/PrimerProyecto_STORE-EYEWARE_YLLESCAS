@@ -33,6 +33,10 @@ a {
 
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> index-html
 /* ###########GRID "BODY"############# */
 body {
     width: 100%;
@@ -70,10 +74,42 @@ footer {
 
 
 /* ###########INDEX########## */
+
+/* nav con bootstrap modificando form search*/
+.btn-outline-success {
+    color: #2d302e;
+    border-color: #2d302e;
+}
+
+.btn-outline-success:hover{
+    background-color:#2d302e ;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+
 /* NAV */
-.navbar {
+.navbar navbar-expand-lg navbar-light bg-light {
     flex-wrap: wrap;
-    flex-direction: row;
+    flex-direction: rcw;
     margin: 0 20px;
     height: 70px;
     justify-content: space-between;
@@ -81,6 +117,7 @@ footer {
     color: #343434;
 
 }
+
 
 
 .logo img{
@@ -528,52 +565,27 @@ footer{
 
 /*=========================FIN GAFAS DE SOL========================= */
 
-/*=========================CSS GAFAS========================= */
-.banner__glass img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-
-}
-
-/*========================= CSS ABOUT US========================= */
-
-.banner__about {
-    width: 100%;
-    height: 100%;
-    
-}
-
-.banner__about img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-
-
-/* Contenido About */
-.about__container {
-    width: 100%;
+/*=========================CSS NOSOTROS========================= */
+.nosotros__container{
+    margin: 3.125rem auto;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    margin: 50px auto;
-    font-size: 14px;
+
 }
 
-.aboutus {
-    margin: 30px 0;
+.nosotros__parrafo{
+    width: 30rem;
+    text-align: justify;
+    padding: 1.875rem;
 }
 
-.aboutus p {
-    margin: 0 50px;
-    
-}
 
-/*========================= FIN CSS ABOUT US========================= */
+
+
+/*========================= FIN CSS NOSOTROS========================= */
 
 /*=========================CSS NEWSLETTER========================= */
 /* -- Formulario login y Suscripcion--   */
@@ -584,7 +596,8 @@ footer{
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-
+    
+    margin: 25px 80px;
 }
 
 

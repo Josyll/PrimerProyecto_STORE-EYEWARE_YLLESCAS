@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
@@ -10,67 +10,98 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,500;1,100;1,400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="../styles/bootstrap.min.css">
     <link rel="stylesheet" href="../styles/index.css">
-    <title>Nosotros - Store Eyewear</title>
+    <title>Nosotros- Store Eyewear</title>
 </head>
 
 <body>
     <header>
         <!-- NAV -->
-        <nav class="navbar flex-row">
-            <picture class="logo">
-                <a href="../../index.html"><img src="../img/nav_bar/store_logo.svg" alt="Logo"></a>
-            </picture>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../../index.html"><img src="../img/nav_bar/store_logo.svg" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"></a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link  dropdown-toggle" href="#" id="navbarScrollingDropdown"
+                                role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                PRODUCTOS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarScrollingDropdown">
+                                <li><a class="dropdown-item" href="../pages/gafas_sol.html">GAFAS DE SOL</a></li>
+                                <li><a class="dropdown-item" href="../pages/gafas.html">GAFAS</a></li>
 
 
-            <ul class="menu flex-row">
-                <li class="menu__item"><a href="../pages/gafas_sol.html">GAFAS DE SOL</a></li>
-                <li class="menu__item"><a href="../pages/gafas.html">GAFAS</a></li>
-                <li class="menu__item"><a href="../pages/nosotros.html">NOSOTROS</a></li>
-                <li class="menu__item"><a href="../pages/contactenos.html">CONTACTENOS</a></li>
-            </ul>
-
-    </header>
+                            </ul>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../pages/nosotros.html">NOSOTROS</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="../pages/contactenos.html">CONTACTENOS</a>
+                        </li>
+                        <!-- </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled">CONTACTENOS</a>
+                  </li> -->
+                    </ul>
+                    <form class="d-flex">
+                        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+   </header>
 
     <main>
-        <!-- banner background -->
-        <section class="banner__container">
-            
-                <img src="../img/img_main/banner-about.jpg" alt="">
-                <!-- <h1 class="banner__tittle">QUIENOS SOMOS?</h1> -->
-            
-        </section>
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="../img/img_main/nosotros.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+        </div>
 
         <!-- Tittle -->
         <div class="tittle-main">
-            <h3>Quienes somos?</h3>
+            <h3>Quines somos?</h3>
         </div>
-        <!-- Contenido about us -->
 
-
-        <article class="about__container">
-            <div class="aboutus">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto nisi error quisquam, adipisci
-                    quos saepe autem ipsa incidunt atque officia sapiente. Numquam omnis consequatur facere blanditiis,
-                    ullam exercitationem ducimus nemo voluptatem, fuga fugiat ipsum! Dignissimos eligendi ex
-                    perspiciatis. Omnis unde molestiae, minima suscipit necessitatibus ipsum explicabo facere quo quos
-                    nisi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga earum assumenda praesentium
-                    optio consequatur exercitationem a temporibus labore ab amet?Lorem ipsum, dolor sit amet consectetur
-                    adipisicing elit. Velit sed dolorem sint alias unde dolorum voluptas voluptates aspernatur deleniti
-                    lorem20</p>
+        <section class="nosotros__container">
+            <div class="nosotros__parrafo">
+                <h4>Titulo</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus necessitatibus quo laborum cumque modi quos nihil dolore accusantium assumenda? Id itaque ea eaque cupiditate illum ad pariatur voluptate quidem aut. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio iste excepturi ipsam earum adipisci, est minus fugiat voluptatibus impedit hic expedita tempore reiciendis amet numquam ut quo aliquid a? Accusamus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita unde saepe, porro accusamus iste consequatur incidunt eius similique, est quos perferendis blanditiis ipsa nemo tempora dolores perspiciatis molestias minima necessitatibus.
+                </p>
             </div>
 
-            <div class="aboutus__video">
-                <iframe width="460" height="229" src="https://www.youtube.com/embed/go95xlxY_Kg"
-                    title="YouTube video player" frameborder="0"
-                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                    allowfullscreen></iframe>
+            <div class="nosotros__parrafo">
+                <h4>Titulo</h4>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus necessitatibus quo laborum cumque modi quos nihil dolore accusantium assumenda? Id itaque ea eaque cupiditate illum ad pariatur voluptate quidem aut. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio iste excepturi ipsam earum adipisci, est minus fugiat voluptatibus impedit hic expedita tempore reiciendis amet numquam ut quo aliquid a? Accusamus! Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita unde saepe, porro accusamus iste consequatur incidunt eius similique, est quos perferendis blanditiis ipsa nemo tempora dolores perspiciatis molestias minima necessitatibus.
+                </p>
             </div>
-        </article>
-
-           
-
+            
+            <div class="nosotros__video">
+                <iframe width="320" height="229" src="https://www.youtube.com/embed/go95xlxY_Kg" title="YouTube video player"
+                  frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+    
+            </div>
+         </section>     
+         
+         
     </main>
+
 
     <footer>
         <section class="footer-container">
@@ -87,11 +118,15 @@
                 <ul>
                     <li><a class="nav--item" href="../pages/nosotros.html">Quienes somos?</a></li>
                     <li><a class="nav--item" href="#">Terminos y Condiciones</a></li>
+<<<<<<< HEAD
                     <li>Derechos Reservados by Josyll&copy;</li>
+=======
+                    <li>Derechos Reservados By Josyll &copy;</li>
+>>>>>>> index-html
                 </ul>
             </div>
     </footer>
-
+    <script src="../js/bootstrap.min.js"></script>
 </body>
 
 </html>
