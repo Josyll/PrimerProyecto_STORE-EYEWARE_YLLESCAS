@@ -593,17 +593,24 @@ footer{
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 50px auto;
-    font-size: 14px;
+    
+    font-size: 12px;
+    
 }
 
 .aboutus {
-    margin: 30px 0;
+    margin: 5px 10px;
+     
+    width: 80%;  
 }
 
 .aboutus p {
-    margin: 0 50px;
+    margin: 50px 50px;
     
+}
+
+.aboutus__video{
+    padding-bottom: 10px;
 }
 
 /*========================= FIN CSS ABOUT US========================= */
