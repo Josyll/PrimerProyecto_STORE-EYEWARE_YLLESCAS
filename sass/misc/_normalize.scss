@@ -8,3 +8,39 @@
 
 
 
+ /* variables */
+:root{
+    $principal: #f2f2f2;
+    $secondary:rgb(167, 220, 241);
+
+}
+
+/* ###########GRID "BODY"############# */
+body {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+    background-color:#f2f2f2 ;
+    display: grid;
+    grid-template-columns: 3 1fr;
+    grid-template-rows: 3 1fr;
+
+}
+
+header {
+    grid-template-columns: 1/4;
+    grid-template-rows: 1;
+    background-color: white;
+
+}
+
+main {
+    grid-template-columns: 1/4;
+    grid-template-rows: 2;
+
+}
+
+footer {
+    grid-template-columns: 1/4;
+    grid-template-rows: 3;
+
+}

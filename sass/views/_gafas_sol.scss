@@ -1,0 +1,136 @@
+/* ==========================GAFAS DE SOL================================== */
+
+/* FORMATO GRID  BODY */
+
+/* Clase .banner__container en HELPERS  */
+
+.banner__sunglass img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+/*  GAFAS DE SOL- FORM Y PRODUCTOS - FLEBOX */
+/* FORM */
+
+.mainFormProduct {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+   
+}
+
+
+/* este boton off canva se aplico con bootstrap */
+.btn-primary:hover {
+    color: #fff;
+    background-color: #2d302e;
+    border-color: white;
+}
+
+/*-- este boton off canva se aplico con bootstrap-- */
+
+.formContainer {
+    background-color: white;
+    width: 100%;
+
+    form {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+
+        .formContainer__box {
+            padding: 30px;
+        
+        }
+        
+    }
+    
+}
+
+
+/* cards product */
+.cardFlexProduct {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.125em;
+    margin-top: 3.125em;
+    gap: 1.25rem;
+
+    .cardContainer {
+        width: 25rem;
+        /* box-shadow: 0 0 5px #343434; */
+        .cardItem {
+            background-color: white;
+            width: inherit;
+            height: 19.125rem;
+            text-align: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        
+        
+        }
+        
+        .cardItem:hover {
+            opacity: 0.7;
+        
+        }
+        
+        .cardImg {
+            width: 14rem;
+            height: 14rem;
+            object-fit: contain;
+        
+        }
+        
+        .priceContainer {
+            background-color: white;
+            width: inherit;
+            height: 8.5rem;
+            border-top: rgba(51, 51, 51, .1) solid 1px;
+            padding: 0.625rem;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+        
+        .priceContainer .priceNull {
+            text-decoration: line-through;
+            font-size: 12px;
+        
+        }
+        
+        
+        .priceHot .price {
+            font-size: 18px;
+        
+        }
+        
+        .priceHot .priceDesc {
+            color: #39b54a;
+            font-size: small;
+            padding: 1rem;
+        }
+        
+        .priceInteres {
+            font-size: smaller;
+        }
+
+
+    
+    }   
+
+}
+
+/* FIN CARDS */
+
+/*=========================FIN GAFAS DE SOL========================= */
