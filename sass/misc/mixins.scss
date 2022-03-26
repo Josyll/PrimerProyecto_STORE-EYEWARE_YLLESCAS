@@ -1,0 +1,29 @@
+/* HELPERS */
+
+.flex-row {
+    display: flex;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+
+}
+
+/* boton whatsapp */
+ .btn-wsp{
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+  
+
+ }

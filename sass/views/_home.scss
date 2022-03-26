@@ -1,0 +1,189 @@
+/*----MAIN------*/
+
+/* animacion en tittle main index */
+.tittle-main {
+    margin: 20px 0;
+    color: white;
+    background-color: #222020;
+    text-align: center;
+    line-height: 50px;
+    font-size: 15px;
+    background: linear-gradient(to right, black, white);
+
+}
+
+/* esto es de bootstrap */
+.offcanvas__main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-primary {
+    margin: 20px 0;
+    padding: 5px;
+    border-left: rgba(51, 51, 51, .1) solid 1px;
+    border-right: rgba(51, 51, 51, .1) solid 1px;
+
+}
+
+/* esto es de bootstrap */
+
+/* SECCION CONTENIDO */
+/* cards */
+.card-flex {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3.125rem;
+    margin-top: 10px;
+    gap: 1.25rem;
+
+    .card-producto {
+        width: 25rem;
+
+        .card-container {
+            background-color: white;
+            width: inherit;
+            height: 19.125rem;
+            text-align: center;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+
+            :hover {
+                opacity: 0.7;
+
+            }
+
+            .card-img {
+                width: 14rem;
+                height: 14rem;
+                object-fit: contain;
+
+            }
+        }
+
+        .container-price {
+            background-color: white;
+            width: inherit;
+            height: 8.5rem;
+            border-top: rgba(51, 51, 51, .1) solid 1px;
+            padding: 0.625rem;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+
+            .price-null {
+                text-decoration: line-through;
+                font-size: 12px;
+            }
+
+            .price-act .price {
+                font-size: 18px;
+
+            }
+
+            .price-act .price-desc {
+                color: #39b54a;
+                font-size: small;
+                padding: 1rem;
+            }
+
+            .price-interes {
+                font-size: smaller;
+            }
+
+        }
+
+    }
+
+
+}
+/* FIN CARDS */
+
+/* INFO COMPRA */
+
+
+.info-slide {
+    background-color: white;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    .info__item {
+        width: 30rem;
+        height: 16rem;
+        text-align: center;
+        padding-top: 20px;
+        img {
+            width: 56px;
+            height: 49px;
+        }
+        h3 {
+            font-size: 15px;
+            text-align: center;
+        
+        }
+        p {
+            font-size: 12px;
+            text-align: center;
+        
+        }
+    
+    }
+    .info__item2 {
+        width: 30rem;
+        height: 16rem;
+        text-align: center;
+        padding-top: 20px;
+        h3 {
+            font-size: 15px;
+            text-align: center;
+        }
+        p {
+            font-size: 12px;
+            text-align: center;
+        }
+    
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
