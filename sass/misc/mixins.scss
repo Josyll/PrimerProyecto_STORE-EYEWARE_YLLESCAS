@@ -1,8 +1,14 @@
 /* HELPERS */
-
-.flex-row {
+@mixin flex ($direction, $flexwrap, $justify, $align){
     display: flex;
+    flex-direction: $direction;
+    flex-wrap: $flexwrap;
+    justify-content: $justify;
+    align-items: $align;
+    
+    
 }
+
 
 html {
     font-size: 62.5%;

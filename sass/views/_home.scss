@@ -31,18 +31,14 @@
 /* esto es de bootstrap */
 
 /* SECCION CONTENIDO */
-/* cards */
+/* cards Aca se aplicó Mixin y map-get */
 .card-flex {
     width: 90%;
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
     margin-bottom: 3.125rem;
     margin-top: 10px;
-    gap: 1.25rem;
+    @include flex(row, wrap,center,center,);
+    gap: map-get($gaps, xlarge );
 
     .card-producto {
         width: 25rem;

@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*variables*/
 /*NORMALIZE*/
 *,
@@ -30,9 +31,6 @@ footer {
   grid-template-rows: 3; }
 
 /* HELPERS */
-.flex-row {
-  display: flex; }
-
 html {
   font-size: 62.5%; }
 
@@ -179,18 +177,18 @@ footer {
 
 /* esto es de bootstrap */
 /* SECCION CONTENIDO */
-/* cards */
+/* cards Aca se aplicó Mixin y map-get */
 .card-flex {
   width: 90%;
   margin: 0 auto;
+  margin-bottom: 3.125rem;
+  margin-top: 10px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin-bottom: 3.125rem;
-  margin-top: 10px;
-  gap: 1.25rem; }
+  gap: 5rem; }
   .card-flex .card-producto {
     width: 25rem; }
     .card-flex .card-producto .card-container {
@@ -263,8 +261,9 @@ footer {
 /* FORM */
 .mainFormProduct {
   display: flex;
-  justify-content: left;
   flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: left;
   align-items: center;
   margin-top: 10px; }
 

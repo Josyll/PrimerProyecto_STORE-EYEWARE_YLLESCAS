@@ -15,10 +15,7 @@
 /* FORM */
 
 .mainFormProduct {
-    display: flex;
-    justify-content: left;
-    flex-direction: column;
-    align-items: center;
+    @include flex(column, wrap,left,center,);
     margin-top: 10px;
    
 }
@@ -38,12 +35,7 @@
     width: 100%;
 
     form {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-
+        @include flex(row, wrap,center,center,);
         .formContainer__box {
             padding: 30px;
         
@@ -58,11 +50,7 @@
 .cardFlexProduct {
     width: 100%;
     margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+    @include flex(row, wrap,center,center,);
     margin-bottom: 3.125em;
     margin-top: 3.125em;
     gap: map-get($gaps, large );
