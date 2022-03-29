@@ -1,3 +1,4 @@
+/*NORMALIZE*/
 *,
 *::after,
 *::before {
@@ -7,19 +8,11 @@
 }
 
 
-
- /* variables */
-:root{
-    $principal: #f2f2f2;
-    $secondary:rgb(167, 220, 241);
-
-}
-
-/* ###########GRID "BODY"############# */
+/*GRID*/
 body {
     width: 100%;
     font-family: 'Montserrat', sans-serif;
-    background-color:#f2f2f2 ;
+    background-color:$fondoPrincipal ;
     display: grid;
     grid-template-columns: 3 1fr;
     grid-template-rows: 3 1fr;

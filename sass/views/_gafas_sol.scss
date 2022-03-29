@@ -54,7 +54,7 @@
 }
 
 
-/* cards product */
+/* cards product  Aplicando Map-get a Gap*/
 .cardFlexProduct {
     width: 100%;
     margin: 0 auto;
@@ -65,7 +65,7 @@
     align-items: center;
     margin-bottom: 3.125em;
     margin-top: 3.125em;
-    gap: 1.25rem;
+    gap: map-get($gaps, large );
 
     .cardContainer {
         width: 25rem;

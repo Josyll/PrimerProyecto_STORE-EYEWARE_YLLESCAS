@@ -1,4 +1,5 @@
-/* variables */
+/*variables*/
+/*NORMALIZE*/
 *,
 *::after,
 *::before {
@@ -6,8 +7,7 @@
   padding: 0;
   box-sizing: border-box; }
 
-/* variables */
-/* ###########GRID "BODY"############# */
+/*GRID*/
 body {
   width: 100%;
   font-family: 'Montserrat', sans-serif;
@@ -298,7 +298,7 @@ footer {
     .formContainer form .formContainer__box {
       padding: 30px; }
 
-/* cards product */
+/* cards product  Aplicando Map-get a Gap*/
 .cardFlexProduct {
   width: 100%;
   margin: 0 auto;
@@ -309,7 +309,7 @@ footer {
   align-items: center;
   margin-bottom: 3.125em;
   margin-top: 3.125em;
-  gap: 1.25rem; }
+  gap: 3rem; }
   .cardFlexProduct .cardContainer {
     width: 25rem;
     /* box-shadow: 0 0 5px #343434; */ }
