@@ -138,19 +138,7 @@
     
     }
     .info__item2 {
-        width: 30rem;
-        height: 16rem;
-        text-align: center;
-        padding-top: 20px;
-        h3 {
-            font-size: 15px;
-            text-align: center;
-        }
-        p {
-            font-size: 12px;
-            text-align: center;
-        }
-    
+        @extend .info__item;
     }
 
 

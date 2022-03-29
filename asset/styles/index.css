@@ -236,29 +236,18 @@ footer {
   justify-content: center;
   align-items: center;
   width: 100%; }
-  .info-slide .info__item {
+  .info-slide .info__item, .info-slide .info__item2 {
     width: 30rem;
     height: 16rem;
     text-align: center;
     padding-top: 20px; }
-    .info-slide .info__item img {
+    .info-slide .info__item img, .info-slide .info__item2 img {
       width: 56px;
       height: 49px; }
-    .info-slide .info__item h3 {
+    .info-slide .info__item h3, .info-slide .info__item2 h3 {
       font-size: 15px;
       text-align: center; }
-    .info-slide .info__item p {
-      font-size: 12px;
-      text-align: center; }
-  .info-slide .info__item2 {
-    width: 30rem;
-    height: 16rem;
-    text-align: center;
-    padding-top: 20px; }
-    .info-slide .info__item2 h3 {
-      font-size: 15px;
-      text-align: center; }
-    .info-slide .info__item2 p {
+    .info-slide .info__item p, .info-slide .info__item2 p {
       font-size: 12px;
       text-align: center; }
 
