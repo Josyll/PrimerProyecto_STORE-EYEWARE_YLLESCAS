@@ -82,8 +82,50 @@
 
         <!-- FORM  -->
         <section class="mainFormProduct">
+             <!-- aplicando offcanvas -->
+    <div class="offcanvas__main">
+        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+          aria-controls="offcanvasExample">
+          ENVIOS FULL
+        </a>
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample">
+          COMO COMPRAR?
+        </button>
+  
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+          aria-controls="offcanvasExample">
+          ENVIOS GRATIS
+        </button>
+  
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+          aria-labelledby="offcanvasExampleLabel">
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">STORE FLEX</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <div>
+              Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
+              etc.
+            </div>
+            <div class="dropdown mt-3">
+              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
+                data-bs-toggle="dropdown">
+                MEDIOS DE PAGO
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="#">Debito o credito</a></li>
+                <li><a class="dropdown-item" href="#">Billetera Virtual</a></li>
+                <li><a class="dropdown-item" href="#">Tranferencia</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--___ aplicando offcanvas___ -->
             <!-- <section class="productContainer"> -->
-                <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">ELEGI TUS GAFAS</button>
+            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">ELEGI TUS GAFAS</button>
 
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
               <div class="offcanvas-header">
@@ -357,25 +399,41 @@
       </a>
 
 
-    <footer>
-        <section class="footer-container">
-
+      <footer>
+        <div class="footer-container">
+          <div class="footer-container1">
+            <div class="footer-contacto">
+              <h5><span>¿NECESITAS AYUDA?</span></h5>
+              <ul>
+                <li>+5419-555555</li>
+                <a href="mailto:info@storeeyewear.com.ar">info@storeyewear.com.ar</a>
+              </ul>
+            </div>
+            
+            <div class="footer-suscripcion">
+              <!-- <h5><span>SUSCRIBITE</span></h5> -->
+                <div class="box-suscripcion">
+                  <input type="email" name="email" class="email" placeholder="SUSCRIBITE: Ingresa tu email aqui" >
+                  <p class="btn-suscripcion">Unirse</p> 
+              </div>        
+            </div>
             <div class="footer-redes">
-                <ul>
-                    <li><a href="#"><img src="../img/redes_footer/brandico_facebook-rect.png" alt="Facebook"></a>
-                    </li>
-                    <li><a href="#"><img src="../img/redes_footer/cib_instagram.png" alt="Instragram"></a></li>
-                    <li><a href="#"><img src="../img/redes_footer/fa-brands_twitter.png" alt="Twitter"></a></li>
-                </ul>
+              <h5><span>SEGUÍNOS</span></h5>
+              <ul>
+                <li><a href="#"><img class="img-redes" src="../img/redes_footer/brandico_facebook-rect.png" alt="Facebook"></a>
+                </li>
+                <li><a href="#"><img class="img-redes" src="../img/redes_footer/cib_instagram.png" alt="Instragram"></a></li>
+                <li><a href="#"><img class="img-redes" src="../img/redes_footer/fa-brands_twitter.png" alt="Twitter"></a></li>
+              </ul>
             </div>
-            <div class="footer-nav">
-                <ul>
-                    <li><a class="nav--item" href="../pages/nosotros.html">Quienes somos?</a></li>
-                    <li><a class="nav--item" href="#">Terminos y Condiciones</a></li>
-                    <li>Derechos Reservados by Josyll&copy;</li>
-                </ul>
+          </div>
+          <div class="footer-container2">
+              <p>Hecho para Store Eyewear.</p>
+              <p>Derechos Reservados by Josyll&copy;</p>
             </div>
-    </footer>
+          
+        </div>
+      </footer>
     <script src="../js/bootstrap.min.js"></script>
 
 </body>
