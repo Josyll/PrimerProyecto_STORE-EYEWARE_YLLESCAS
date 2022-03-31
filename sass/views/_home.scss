@@ -1,14 +1,13 @@
 /*----MAIN------*/
 
 /* animacion en tittle main index */
-.tittle-main {
-    margin: 20px 0;
-    color: white;
-    background-color: #222020;
+.tittle-main h1{
+    color: #222020;
+    background-color: white;
     text-align: center;
     line-height: 50px;
-    font-size: 15px;
-    background: linear-gradient(to right, black, white);
+    
+    letter-spacing: 0.5em;
 
 }
 
@@ -31,14 +30,79 @@
 /* esto es de bootstrap */
 
 /* SECCION CONTENIDO */
+.boxSlogan{
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    & h4{
+        font-size: map-get($fontsizes, large );
+        letter-spacing: 0.3em
+    }
+    .boxLine{
+        margin: inherit;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 50px;
+        height: 1px;
+        border-bottom: #343434;
+        background-color: #343434;
+        
+    }
+
+    & p{
+        font-size: map-get($fontsizes, medium );
+        letter-spacing: 0.3em } 
+    
+}   
 /* cards Aca se aplicó Mixin y map-get */
+.ofertas__container {
+    @include flex(row, wrap, center, center, );
+    gap: map-get($gaps, medium);
+    margin:40px 0;
+    
+
+    .ofertas__btn {
+        height: 57px;
+        background-color: #343434;
+        color: white;
+        text-align: center;
+        line-height: 57px;
+        font-size: map-get($fontsizes, small );
+        position: relative;
+    }
+    
+    
+
+}
+
+// animacion
+.ofertas__card:hover{
+    animation-name: minizoom;
+    animation-duration: 2s;
+    opacity: 0.5;
+}
+
+
+@keyframes minizoom {
+    0%{
+        transform:scale(1);
+    }
+    80%{
+        transform:scale(1.03);
+    }
+    
+}
+
+
+
 .card-flex {
     width: 90%;
     margin: 0 auto;
     margin-bottom: 3.125rem;
     margin-top: 10px;
-    @include flex(row, wrap,center,center,);
-    gap: map-get($gaps, xlarge );
+    @include flex(row, wrap, center, center, );
+    gap: map-get($gaps, xlarge);
 
     .card-producto {
         width: 25rem;
@@ -99,6 +163,7 @@
 
 
 }
+
 /* FIN CARDS */
 
 /* INFO COMPRA */
@@ -112,27 +177,32 @@
     justify-content: center;
     align-items: center;
     width: 100%;
+
     .info__item {
         width: 30rem;
         height: 16rem;
         text-align: center;
         padding-top: 20px;
+
         img {
             width: 56px;
             height: 49px;
         }
+
         h3 {
             font-size: 15px;
             text-align: center;
-        
+
         }
+
         p {
             font-size: 12px;
             text-align: center;
-        
+
         }
-    
+
     }
+
     .info__item2 {
         @extend .info__item;
     }
@@ -141,33 +211,17 @@
 
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width:760px) {
+    .boxSlogan{
+        & h4{
+            font-size: map-get($fontsizes, medium );
+            letter-spacing: 0.3em;
+        }
+        
+        & p{
+            font-size: map-get($fontsizes, small );
+            letter-spacing: 0.3em 
+        } 
+        
+    }   
+}
