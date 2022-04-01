@@ -307,6 +307,12 @@ header {
       text-align: center; }
 
 @media screen and (max-width: 760px) {
+  .ofertas__container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center; }
   .boxSlogan h4 {
     font-size: 2rem;
     letter-spacing: 0.3em; }

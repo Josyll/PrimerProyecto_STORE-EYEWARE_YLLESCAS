@@ -212,6 +212,9 @@
 }
 
 @media screen and (max-width:760px) {
+    .ofertas__container {
+        @include flex(column, wrap, center, center, );}
+
     .boxSlogan{
         & h4{
             font-size: map-get($fontsizes, medium );
@@ -223,5 +226,7 @@
             letter-spacing: 0.3em 
         } 
         
-    }   
+    }
+    
+    
 }
