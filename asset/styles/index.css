@@ -180,9 +180,7 @@ header {
 
 .btn-primary {
   margin: 20px 0;
-  padding: 5px;
-  border-left: rgba(51, 51, 51, 0.1) solid 1px;
-  border-right: rgba(51, 51, 51, 0.1) solid 1px; }
+  padding: 5px; }
 
 /* esto es de bootstrap */
 /* SECCION CONTENIDO */
@@ -319,6 +317,14 @@ header {
   color: #fff;
   background-color: #2d302e;
   border-color: white; }
+
+.btn-check:focus + .btn-primary, .btn-primary:focus {
+  color: black;
+  background-color: transparent;
+  border-color: #f4f4f4; }
+
+.btn-check:focus + .btn, .btn:focus {
+  box-shadow: none; }
 
 /*-- este boton off canva  modificandobootstrap-- */
 .offcanvas-end {

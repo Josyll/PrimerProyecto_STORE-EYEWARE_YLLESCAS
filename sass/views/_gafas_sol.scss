@@ -22,12 +22,25 @@
 
 
 /* este boton off canva modificando bootstrap */
+
+
 .btn-primary:hover {
     color: #fff;
     background-color: #2d302e;
     border-color: white;
 }
 
+.btn-check:focus+.btn-primary, .btn-primary:focus{
+    color: black;
+    background-color: transparent;
+    border-color: #f4f4f4;
+    // box-shadow: 0 0 0 0.25rem rgb(49 132 253 / 50%);
+
+}
+.btn-check:focus+.btn, .btn:focus {
+    
+    box-shadow: none;
+}
 
 
 /*-- este boton off canva  modificandobootstrap-- */
