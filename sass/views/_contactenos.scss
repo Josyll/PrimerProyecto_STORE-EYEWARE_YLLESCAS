@@ -61,9 +61,11 @@
         
     }
 
-    .form__input:focus + .form__label{
+    .form__input:focus + .form__label,
+    .form__input:not(:placeholder-shown) + .form__label{
         transform: translateY(-12px) scale(.7);
         transform-origin: left top;
+        color: $c-Botonfocus;
     }
 
     .form__label{
@@ -105,6 +107,8 @@
         border-bottom: 1px solid #57575777;
         
     }
+
+   
 
 }
 
