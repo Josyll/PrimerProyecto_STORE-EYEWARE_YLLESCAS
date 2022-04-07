@@ -1,38 +1,129 @@
 /*=========================CSS CONTACTENOS========================= */
-/* -- Formulario login y Suscripcion--   */
+.form__contact{
+    @include flex (row,wrap, center, center);
+    // <!-- Formulario message-->
+        .form__message{
+        background-color: white;
+        margin: 10rem auto;
+        width: 90%;
+        max-width: 700px;
+        padding: 4.5em 3em;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px -5px rgb(0, 0, 0 /30%);
+        text-align: center;
+    }
+    // <!-- Formulario login-->
+    .form{
+        background-color: white;
+        margin: 10rem auto;
+        width: 90%;
+        max-width: 300px;
+        padding: 4.5em 3em;
+        border-radius: 10px;
+        box-shadow: 0 5px 10px -5px rgb(0, 0, 0 /30%);
+        text-align: center;
+    }
+    
+    .form__title{
+        font-size: 2rem;
+        margin-bottom: .5em;
+    }
+
+    .form__parrafo{
+        font-weight: 500;
+    }
+
+    .form__link{
+        font-weight: 500;
+        color:blue;
+    }
+
+    .form__container{
+        margin-top: 3em;
+        display: grid;
+        gap: 2.5em;
+    }
+
+    .form__group{
+        position: relative;
+        color: #57575777;        
+    }
+
+    .form__input{
+        width: 100%;
+        background-color: none;
+        color: #706c6c;
+        font-size: 1rem;
+        padding: .6em .3em;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #57575777;
+        
+    }
+
+    .form__input:focus + .form__label{
+        transform: translateY(-12px) scale(.7);
+        transform-origin: left top;
+    }
+
+    .form__label{
+        color:$colorPrincipal;
+        cursor: pointer;
+        position: absolute;
+        top: 0;
+        left: 5px;
+        transform: translateY(10px);
+        transition: transform .5s, color .3s;
+    }
+
+    .form__submit{
+        background-color: $colorPrincipal;
+        color: white;
+        font-weight: 300;
+        font-size: 1.2rem;
+        padding: .8em 0;
+        border: none;
+        border-radius: .5em;
+    }
+    .form__submit:hover{
+        background-color: #706c6c;
+        color: $fondoPrincipal;
+    }
+    .form__submit:focus{
+        background-color: $c-Botonfocus;
+    }
 
 
-.newsletter__container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+    .form__textarea{
+        width: 100%;
+        background-color: none;
+        color: #706c6c;
+        font-size: 1rem;
+        padding: .6em .3em;
+        border: none;
+        outline: none;
+        border-bottom: 1px solid #57575777;
+        
+    }
 
-    margin: 25px 8rem;
 }
 
 
 
 
-
-/* formularios */
-
-
-.form ul li {
-    border-radius: 6px;
-}
-
-.log {
-    margin: 30px 0;
-
-}
-
-.log__ico {
-    width: 20px;
-}
-
-.news {
-    margin: 30px 0;
-}
 
 /*========================= FIN CSS CONTACTENOS========================= */
+@media (max-width:425px) {
+    .form__title{
+        font-size: 1.8rem;
+    }
+}
+
+// @media screen and (max-width:992px) {
+//     .newsletter__container {
+        
+//         width: 50%;
+//         margin: 5rem auto;
+//     }
+    
+// }

@@ -61,82 +61,61 @@
     </header>
 
     <main>
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="../img/img_main/contacto.png" class="d-block w-100" alt="...">
-              </div>
-            </div>
-          </div>
-
+        
         <!-- Tittle -->
         <div class="tittle-main">
             <h1>Contáctenos</h1>
         </div>
 
-        <!-- Formulario login-->
-        <section class="newsletter__container">
-            
+       <!-- FORM -->
+        <section class="form__contact">
+          <!-- Form mensajes -->
+          <form class="form__message">
+            <h2 class="form__title">Dejános un mensaje</h2>
+            <div class="form__container">
+              <div class="form__group">
+                <input type="text" id="name" class="form__input" placeholder="">
+                <label for="name" class="form__label">Nombre</label>
+                <span class="form__line"></span>
+              </div>
+              <div class="form__group">
+                <input type="text" id="name" class="form__input" placeholder="">
+                <label for="user" class="form__label">E-mail</label>
+                <span class="form__line"></span>
+              </div>
+              <div class="form__group">
+                <textarea class="form__textarea" name="" id="" cols="30" rows="10" placeholder="Escriba aqui..."></textarea>
+                <span class="form__line"></span>
+              </div>
+              
+              <input type="submit" class="form__submit" value="Enviar">
+            </div>
+          </form>
+             <!-- Formulario login-->      
+          <form class="form">
+            <h2 class="form__title">Inicia Sesión</h2>
+            <p class="form__parrafo">Aun no estas registrado? <a class="form__link"  href="#"></a>Entra aquí</p>
 
-            <form class="row g-3">
-                <div class="col-md-6">
-                  <label for="inputEmail4" class="form-label">Email</label>
-                  <input type="email" class="form-control" id="inputEmail4">
-                </div>
-                <div class="col-md-6">
-                  <label for="inputPassword4" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="inputPassword4">
-                </div>
-                <div class="col-12">
-                  <label for="inputAddress" class="form-label">Dirección</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="Avenida, calle">
-                </div>
-                <div class="col-12">
-                  <label for="inputAddress2" class="form-label">Numero</label>
-                  <input type="text" class="form-control" id="inputAddress2" placeholder="Departamento, casa, estudio">
-                </div>
-                <div class="col-md-6">
-                  <label for="inputCity" class="form-label">Ciudad</label>
-                  <input type="text" class="form-control" id="inputCity">
-                </div>
-                <div class="col-md-4">
-                  <label for="inputState" class="form-label">Provincia</label>
-                  <select id="inputState" class="form-select">
-                    <option selected>Choose...</option>
-                    <option>...</option>
-                  </select>
-                </div>
-                <div class="col-md-2">
-                  <label for="inputZip" class="form-label">C.P.</label>
-                  <input type="text" class="form-control" id="inputZip">
-                </div>
-                <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                      Check me out
-                    </label>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <button type="submit" class="btn btn-primary">Enviar</button>
-                </div>
-              </form>
-            <!-- <div class="log">
-                <h3 class="news__tittle"><img class="log__ico" src="../img/nav_bar/icon_logo.svg" alt=""> Login</h3>
-                <form class="form">
-                    <ul>
-                        <li><input type="text" placeholder="Usuario o Email" id="Usuario o Email" required></li>
-                        <li><input type="password" placeholder="Contraseña" id="Contraseña" required></li>
-                    </ul>
-                    <input class="cta__form" type="reset">
-                    <input class="cta__form" type="submit">
-                </form>
-            </div> -->
-
-            <!--Formulario Suscripcion  -->
-
-            
+            <div class="form__container">
+              <div class="form__group">
+                <input type="text" id="name" class="form__input" placeholder="">
+                <label for="name" class="form__label">Nombre</label>
+                <span class="form__line"></span>
+              </div>
+              <div class="form__group">
+                <input type="text" id="name" class="form__input" placeholder="">
+                <label for="user" class="form__label">E-mail</label>
+                <span class="form__line"></span>
+              </div>
+              <div class="form__group">
+                <input type="text" id="password" class="form__input" placeholder="">
+                <label for="password" class="form__label">Contraseña</label>
+                <span class="form__line"></span>
+              </div>
+              
+              <input type="submit" class="form__submit" value="Entrar">
+            </div>
+          </form>
         </section>
 
     </main>
