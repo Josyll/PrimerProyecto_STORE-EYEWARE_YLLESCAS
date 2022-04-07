@@ -7,7 +7,7 @@
     text-align: center;
     line-height: 50px;
     
-    letter-spacing: 0.5em;
+    letter-spacing: 0.35em;
 
 }
 
@@ -166,50 +166,7 @@
 
 /* FIN CARDS */
 
-/* INFO COMPRA */
 
-
-.info-slide {
-    background-color: white;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-
-    .info__item {
-        width: 30rem;
-        height: 16rem;
-        text-align: center;
-        padding-top: 20px;
-
-        img {
-            width: 56px;
-            height: 49px;
-        }
-
-        h3 {
-            font-size: 15px;
-            text-align: center;
-
-        }
-
-        p {
-            font-size: 12px;
-            text-align: center;
-
-        }
-
-    }
-
-    .info__item2 {
-        @extend .info__item;
-    }
-
-
-
-}
 
 @media screen and (max-width:760px) {
     .ofertas__container {

@@ -82,316 +82,413 @@
 
         <!-- FORM  -->
         <section class="mainFormProduct">
-             <!-- aplicando offcanvas -->
-    <div class="offcanvas__main">
-        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
-          aria-controls="offcanvasExample">
-          ENVIOS FULL
-        </a>
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-          aria-controls="offcanvasExample">
-          COMO COMPRAR?
-        </button>
-  
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
-          aria-controls="offcanvasExample">
-          ENVIOS GRATIS
-        </button>
-  
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
-          aria-labelledby="offcanvasExampleLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">STORE FLEX</h5>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          <!-- aplicando offcanvas -->
+  <div class="offcanvas__main">
+      <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#enviosfull" role="button"
+        aria-controls="offcanvasExample">
+        ENVIOS FULL
+      </a>
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#comocomprar"
+        aria-controls="offcanvasExample">
+        COMO COMPRAR?
+      </button>
+
+      <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        aria-controls="offcanvasExample">
+        FORMAS DE PAGO
+      </button>
+<!--ENVIOS FULL  -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="enviosfull"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">ENVIOS FULL</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div class="body__text" >
+              Mercado Envíos Full es uno de los servicios de Mercado Envíos que, además de ocuparse de tus envíos, almacena tu stock y prepara tus paquetes cada vez que recibís una venta. 
           </div>
-          <div class="offcanvas-body">
-            <div>
-              Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
-              etc.
-            </div>
-            <div class="dropdown mt-3">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-bs-toggle="dropdown">
-                MEDIOS DE PAGO
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" href="#">Debito o credito</a></li>
-                <li><a class="dropdown-item" href="#">Billetera Virtual</a></li>
-                <li><a class="dropdown-item" href="#">Tranferencia</a></li>
-              </ul>
-            </div>
-          </div>
+          <div class="body__text">
+              <h5>Servicio completo de almacenamiento y logística </h5>
+              <table >
+              <tbody">
+              <tr>
+              <td >
+              <p>Almacenamiento de stock</p>
+              </td>
+              <td>
+              <p>Guardamos tus productos en nuestro centro de almacenamiento.</p>
+              </td>
+              </tr>
+              <tr >
+              <td >
+              <p>Preparación de paquetes</p>
+              </td>
+              <td >
+              <p>Imprimimos las etiquetas y embalamos los productos para el envío.</p>
+              </td>
+              </tr>
+              <tr >
+              <td >
+              <p>Envíos rápidos</p>
+              </td>
+              <td >
+              <p>Entregamos tus productos al día siguiente.</p>
+              </td>
+              </tr>
+              </tbody>
+              </table>
+         </div>
         </div>
       </div>
-      <!--___ aplicando offcanvas___ -->
-            <!-- <section class="productContainer"> -->
-            <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">ELEGI TUS GAFAS</button>
+<!-- COMO COMPRAR? -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="comocomprar"
+      aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">COMO COMPRAR?</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <div>
+           <!-- INFO DE COMPRA -->
+          <article>
+              <section class="info-slide">
+                  <div class="info__item">
+                      <img src="../img/img_main/payment.svg" alt="">
+                      <h3>Paga con tarjeta o en efectivo</h3>
+                      <p>Con Mercado Pago, tenes cuotas sin interes</p>
+                  </div>
+  
+                  <div class="info__item2">
+                      <img src="../img/img_main/shipping.svg" alt="">
+                      <h3>Recibi tu produto</h3>
+                      <p>Elegí Mercado Envíos y seguí tu compra hasta que llegue a tus manos.</p>
+                  </div>
+                  <div class="info__item">
+                      <img src="../img/img_main/protected.svg" alt="">
+                      <h3>Compra protegida</h3>
+                      <p>Te acompañamos hasta que recibas lo que compraste. Y si no es lo que esperabas, te devolvemos el
+                          dinero</p>
+                  </div>
+              </section>
+  
+          </article>
+        </div>
+       
+      </div>
+    </div>
 
-            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-              <div class="offcanvas-header">
-                <h5 id="offcanvasRightLabel">Buscar</h5>
-                <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-              </div>
-              <div class="offcanvas-body">
-                  <!-- formulario de busqueda -->
-                <div class="formContainer">
-                    <form action="#">
-                        
-    
-                        <div class="formContainer__box">
-                            <h4>Marcas</h4>
-    
-                            <select>
-                                <option>Rayban</option>
-                                <option>Vogue</option>
-                                <option>Armani</option>
-                                <option selected>Rayban</option>
-                                <option>Oakley</option>
-                            </select>
-                        </div>
-    
-                        <div class="formContainer__box">
-                            <h4>Material</h4>
-                            <ul>
-                                </li><label>
-                                    <input type="radio" name="turno">Metal
-                                </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="radio" name="turno">Acetato
-                                    </label>
-                                </li>
-                                <li>
-                                    <label>
-                                        <input type="radio" name="turno">Madera
-                                    </label>
-                                </li>
-                            </ul>
-                        </div>
-    
-                        <div class="formContainer__box">
-                            <h4>Géneros</h4>
-                            <ul>
-                                <li><label><input type="checkbox">Hombre</label></li>
-                                <li><label><input type="checkbox">Mujer</label></li>
-                                <li><label><input type="checkbox">Sin Géneros</label></li>
-                            </ul>
-                        </div>
-    
-                        <div class="formContainer__box">
-                            <h4>Estilos</h4>
-                            <ul>
-                                <li><label><input type="checkbox">Moderno</label></li>
-                                <li><label><input type="checkbox">Vintage</label></li>
-                                <li><label><input type="checkbox">clásicos</label></li>
-                            </ul>
-    
-                        </div>
-    
-                        <div class="formContainer__box">
-                            
-                            <input class="cta__form" type="submit" value="Buscar">
-                        </div>
-                    </form>
-                </div>
+<!-- FORMAS DE PAGO -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+    aria-labelledby="offcanvasExampleLabel">
+    <div class="offcanvas-header">
+      <h5 class="offcanvas-title" id="offcanvasExampleLabel">FORMAS DE PAGO</h5>
+      <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+      <!-- <div class="body__text"> 
+      Te ofrecemos varias Opciones de pago    
+      </div> -->
+      <div class="body__text">
+          <h4>Puedes pagar con</h4>
+          
+          <select>
+              <option>Debito automatico</option>
+              <option>Tarjeta Credito</option>
+              <option>Uala</option>
+              <option selected>Mercado Pago</option>
+              <option>Pago Fácil</option>
+          </select>
+      </div>
+      
+    </div>
+  </div>
+
+    </div>
+    <!--___ aplicando offcanvas___ -->
+      <!-- <section class="productContainer"> -->     
+          <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">ELEGI TUS GAFAS</button>
+
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h5 id="offcanvasRightLabel">Buscar</h5>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+                <!-- formulario de busqueda -->
+              <div class="formContainer">
+                  <form action="#">
+                      
+  
+                      <div class="formContainer__box">
+                          <h4>Marcas</h4>
+  
+                          <select>
+                              <option>Rayban</option>
+                              <option>Vogue</option>
+                              <option>Armani</option>
+                              <option selected>Rayban</option>
+                              <option>Oakley</option>
+                          </select>
+                      </div>
+  
+                      <div class="formContainer__box">
+                          <h4>Material</h4>
+                          <ul>
+                              </li><label>
+                                  <input  type="radio" name="turno">Metal
+                              </label>
+                              </li>
+                              <li>
+                                  <label>
+                                      <input  type="radio" name="turno">Acetato
+                                  </label>
+                              </li>
+                              <li>
+                                  <label>
+                                      <input type="radio" name="turno">Madera
+                                  </label>
+                              </li>
+                          </ul>
+                      </div>
+  
+                      <div class="formContainer__box">
+                          <h4>Géneros</h4>
+                          <ul>
+                              <li><label><input type="checkbox">Hombre</label></li>
+                              <li><label><input type="checkbox">Mujer</label></li>
+                              <li><label><input type="checkbox">Sin Géneros</label></li>
+                          </ul>
+                      </div>
+  
+                      <div class="formContainer__box">
+                          <h4>Estilos</h4>
+                          <ul>
+                              <li><label><input type="checkbox">Moderno</label></li>
+                              <li><label><input type="checkbox">Vintage</label></li>
+                              <li><label><input type="checkbox">clásicos</label></li>
+                          </ul>
+  
+                      </div>
+  
+                      <div class="formContainer__box">
+                          
+                          <input class="cta__form" type="submit" value="Buscar">
+                      </div>
+                  </form>
               </div>
             </div>
+          </div>
 
-            <!--FIN FORM  -->
-            <!--  SECCION PRODUCTOS -->
+         
+          <!--FIN FORM  -->
+          <!--  SECCION PRODUCTOS -->
 
-            <section class="cardFlexProduct">
+          <section class="cardFlexProduct">
 
-                <article class="cardContainer">
+              <article class="cardContainer">
 
-                    <div class="cardItem">
-                        <div>
-                            <img class="cardImg" src="../img/gallery/glasses/bluelight.png" alt="">
-                        </div>
+                  <div class="cardItem">
+                      <div>
+                          <img class="cardImg" src="../img/gallery/sunglasses/sunglass1.jpg" alt="">
+                      </div>
 
-                    </div>
-                    <div class="priceContainer">
-                        <span class="priceNull">$15.000</span>
+                  </div>
+                  <div class="priceContainer">
+                      <span class="priceNull">$15.000</span>
 
-                        <div class="priceHot">
-                            <span class="price">$12.000</span>
-                            <span class="priceDesc">20% OFF</span>
-                        </div>
+                      <div class="priceHot">
+                          <span class="price">$12.000</span>
+                          <span class="priceDesc">20% OFF</span>
+                      </div>
 
-                        <span class="priceInteres">12x $1000,0 sin intereses</span>
-                    </div>
-                </article>
+                      <span class="priceInteres">12x $1000,0 sin intereses</span>
+                  </div>
+              </article>
 
-                <article class="cardContainer">
+              <article class="cardContainer">
 
-                    <div class="cardItem">
-                        <div>
-                            <img class="cardImg" src="../img/gallery/glasses/glass1.jpg" alt="">
-                        </div>
+                  <div class="cardItem">
+                      <div>
+                          <img class="cardImg" src="../img/gallery/sunglasses/sunglass2.jpg" alt="">
+                      </div>
 
-                    </div>
-                    <div class="priceContainer">
-                        <span class="priceNull">$15.000</span>
+                  </div>
+                  <div class="priceContainer">
+                      <span class="priceNull">$15.000</span>
 
-                        <div class="priceHot">
-                            <span class="price">$12.000</span>
-                            <span class="priceDesc">20% OFF</span>
-                        </div>
+                      <div class="priceHot">
+                          <span class="price">$12.000</span>
+                          <span class="priceDesc">20% OFF</span>
+                      </div>
 
-                        <span class="priceInteres">12x $1000,0 sin intereses</span>
-                    </div>
-                </article>
+                      <span class="priceInteres">12x $1000,0 sin intereses</span>
+                  </div>
+              </article>
 
-                <article class="cardContainer">
+              <article class="cardContainer">
 
-                    <div class="cardItem">
-                        <div>
-                            <img class="cardImg" src="../img/gallery/glasses/glass2.jpg" alt="">
-                        </div>
+                  <div class="cardItem">
+                      <div>
+                          <img class="cardImg" src="../img/gallery/sunglasses/sunglass3.jpg" alt="">
+                      </div>
 
-                    </div>
-                    <div class="priceContainer">
-                        <span class="priceNull">$15.000</span>
+                  </div>
+                  <div class="priceContainer">
+                      <span class="priceNull">$15.000</span>
 
-                        <div class="priceHot">
-                            <span class="price">$12.000</span>
-                            <span class="priceDesc">20% OFF</span>
-                        </div>
+                      <div class="priceHot">
+                          <span class="price">$12.000</span>
+                          <span class="priceDesc">20% OFF</span>
+                      </div>
 
-                        <span class="priceInteres">12x $1000,0 sin intereses</span>
-                    </div>
-                </article>
+                      <span class="priceInteres">12x $1000,0 sin intereses</span>
+                  </div>
+              </article>
 
-                <article class="cardContainer">
+              <article class="cardContainer">
 
-                    <div class="cardItem">
-                        <div>
-                            <img class="cardImg" src="../img/gallery/glasses/glass3.jpg" alt="">
-                        </div>
+                  <div class="cardItem">
+                      <div>
+                          <img class="cardImg" src="../img/gallery/sunglasses/sunglass4.jpg" alt="">
+                      </div>
 
-                    </div>
-                    <div class="priceContainer">
-                        <span class="priceNull">$15.000</span>
+                  </div>
+                  <div class="priceContainer">
+                      <span class="priceNull">$15.000</span>
 
-                        <div class="priceHot">
-                            <span class="price">$12.000</span>
-                            <span class="priceDesc">20% OFF</span>
-                        </div>
+                      <div class="priceHot">
+                          <span class="price">$12.000</span>
+                          <span class="priceDesc">20% OFF</span>
+                      </div>
 
-                        <span class="priceInteres">12x $1000,0 sin intereses</span>
-                    </div>
-                </article>
+                      <span class="priceInteres">12x $1000,0 sin intereses</span>
+                  </div>
+              </article>
 
-                <article class="cardContainer">
+              <article class="cardContainer">
 
-                    <div class="cardItem">
-                        <div>
-                            <img class="cardImg" src="../img/gallery/glasses/glass4.jpg" alt="">
-                        </div>
+                  <div class="cardItem">
+                      <div>
+                          <img class="cardImg" src="../img/gallery/sunglasses/sunglass5.jpg" alt="">
+                      </div>
 
-                    </div>
-                    <div class="priceContainer">
-                        <span class="priceNull">$15.000</span>
+                  </div>
+                  <div class="priceContainer">
+                      <span class="priceNull">$15.000</span>
 
-                        <div class="priceHot">
-                            <span class="price">$12.000</span>
-                            <span class="priceDesc">20% OFF</span>
-                        </div>
+                      <div class="priceHot">
+                          <span class="price">$12.000</span>
+                          <span class="priceDesc">20% OFF</span>
+                      </div>
 
-                        <span class="priceInteres">12x $1000,0 sin intereses</span>
-                    </div>
-                </article>
+                      <span class="priceInteres">12x $1000,0 sin intereses</span>
+                  </div>
+              </article>
 
-                <article class="cardContainer">
+              <article class="cardContainer">
 
-                    <div class="cardItem">
-                        <div>
-                            <img class="cardImg" src="../img/gallery/glasses/img_card1.jpg" alt="">
-                        </div>
+                  <div class="cardItem">
+                      <div>
+                          <img class="cardImg" src="../img/gallery/sunglasses/sunglass3.jpg" alt="">
+                      </div>
 
-                    </div>
-                    <div class="priceContainer">
-                        <span class="priceNull">$15.000</span>
+                  </div>
+                  <div class="priceContainer">
+                      <span class="priceNull">$15.000</span>
 
-                        <div class="priceHot">
-                            <span class="price">$12.000</span>
-                            <span class="priceDesc">20% OFF</span>
-                        </div>
+                      <div class="priceHot">
+                          <span class="price">$12.000</span>
+                          <span class="priceDesc">20% OFF</span>
+                      </div>
 
-                        <span class="priceInteres">12x $1000,0 sin intereses</span>
-                    </div>
-                </article>
+                      <span class="priceInteres">12x $1000,0 sin intereses</span>
+                  </div>
+              </article>
 
-                <article class="cardContainer">
+              <article class="cardContainer">
 
-                    <div class="cardItem">
-                        <div>
-                            <img class="cardImg" src="../img/gallery/glasses/card4.jpg" alt="">
-                        </div>
+                  <div class="cardItem">
+                      <div>
+                          <img class="cardImg" src="../img/gallery/sunglasses/sunglass2.jpg" alt="">
+                      </div>
 
-                    </div>
-                    <div class="priceContainer">
-                        <span class="priceNull">$15.000</span>
+                  </div>
+                  <div class="priceContainer">
+                      <span class="priceNull">$15.000</span>
 
-                        <div class="priceHot">
-                            <span class="price">$12.000</span>
-                            <span class="priceDesc">20% OFF</span>
-                        </div>
+                      <div class="priceHot">
+                          <span class="price">$12.000</span>
+                          <span class="priceDesc">20% OFF</span>
+                      </div>
 
-                        <span class="priceInteres">12x $1000,0 sin intereses</span>
-                    </div>
-                </article>
+                      <span class="priceInteres">12x $1000,0 sin intereses</span>
+                  </div>
+              </article>
 
-                <article class="cardContainer">
+              <article class="cardContainer">
 
-                    <div class="cardItem">
-                        <div>
-                            <img class="cardImg" src="../img/gallery/glasses/glass2.jpg" alt="">
-                        </div>
+                  <div class="cardItem">
+                      <div>
+                          <img class="cardImg" src="../img/gallery/sunglasses/sunglass1.jpg" alt="">
+                      </div>
 
-                    </div>
-                    <div class="priceContainer">
-                        <span class="priceNull">$15.000</span>
+                  </div>
+                  <div class="priceContainer">
+                      <span class="priceNull">$15.000</span>
 
-                        <div class="priceHot">
-                            <span class="price">$12.000</span>
-                            <span class="priceDesc">20% OFF</span>
-                        </div>
+                      <div class="priceHot">
+                          <span class="price">$12.000</span>
+                          <span class="priceDesc">20% OFF</span>
+                      </div>
 
-                        <span class="priceInteres">12x $1000,0 sin intereses</span>
-                    </div>
-                </article>
-            </section>
-                    
-        </section>
+                      <span class="priceInteres">12x $1000,0 sin intereses</span>
+                  </div>
+              </article>
 
-        <article>
+              <article class="cardContainer">
 
-            <!-- INFO DE COMPRA -->
-            <section class="info-slide">
-                <div class="info__item">
-                    <img src="../img/img_main/payment.svg" alt="">
-                    <h3>Paga con tarjeta o en efectivo</h3>
-                    <p>Con Mercado Pago, tenes cuotas sin interes</p>
-                </div>
+                  <div class="cardItem">
+                      <div>
+                          <img class="cardImg" src="../img/gallery/sunglasses/sunglass1.jpg" alt="">
+                      </div>
 
-                <div class="info__item2">
-                    <img src="../img/img_main/shipping.svg" alt="">
-                    <h3>Recibi tu produto</h3>
-                    <p>Elegí Mercado Envíos y seguí tu compra hasta que llegue a tus manos.</p>
-                </div>
-                <div class="info__item">
-                    <img src="../img/img_main/protected.svg" alt="">
-                    <h3>Compra protegida</h3>
-                    <p>Te acompañamos hasta que recibas lo que compraste. Y si no es lo que esperabas, te devolvemos el
-                        dinero</p>
-                </div>
-            </section>
+                  </div>
+                  <div class="priceContainer">
+                      <span class="priceNull">$15.000</span>
 
-        </article>
+                      <div class="priceHot">
+                          <span class="price">$12.000</span>
+                          <span class="priceDesc">20% OFF</span>
+                      </div>
 
+                      <span class="priceInteres">12x $1000,0 sin intereses</span>
+                  </div>
+              </article>
 
+              <article class="cardContainer">
+
+                  <div class="cardItem">
+                      <div>
+                          <img class="cardImg" src="../img/gallery/sunglasses/sunglass2.jpg" alt="">
+                      </div>
+
+                  </div>
+                  <div class="priceContainer">
+                      <span class="priceNull">$15.000</span>
+
+                      <div class="priceHot">
+                          <span class="price">$12.000</span>
+                          <span class="priceDesc">20% OFF</span>
+                      </div>
+
+                      <span class="priceInteres">12x $1000,0 sin intereses</span>
+                  </div>
+              </article>
+          </section>
+
+          
+      </section>    
     </main>
 
     <a href="https://api.whatsapp.com/send?phone=Tu-n%C3%B9mero-aqu%C3%AD" class="btn-wsp" target="_blank">

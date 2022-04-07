@@ -83,44 +83,126 @@
         <section class="mainFormProduct">
             <!-- aplicando offcanvas -->
     <div class="offcanvas__main">
-        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button"
+        <a class="btn btn-primary" data-bs-toggle="offcanvas" href="#enviosfull" role="button"
           aria-controls="offcanvasExample">
           ENVIOS FULL
         </a>
-        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+        <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#comocomprar"
           aria-controls="offcanvasExample">
           COMO COMPRAR?
         </button>
   
         <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
           aria-controls="offcanvasExample">
-          ENVIOS GRATIS
+          FORMAS DE PAGO
         </button>
-  
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+  <!--ENVIOS FULL  -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="enviosfull"
           aria-labelledby="offcanvasExampleLabel">
           <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasExampleLabel">STORE FLEX</h5>
+            <h5 class="offcanvas-title" id="offcanvasExampleLabel">ENVIOS FULL</h5>
             <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
           <div class="offcanvas-body">
-            <div>
-              Some text as placeholder. In real life you can have the elements you have chosen. Like, text, images, lists,
-              etc.
+            <div class="body__text" >
+                Mercado Envíos Full es uno de los servicios de Mercado Envíos que, además de ocuparse de tus envíos, almacena tu stock y prepara tus paquetes cada vez que recibís una venta. 
             </div>
-            <div class="dropdown mt-3">
-              <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton"
-                data-bs-toggle="dropdown">
-                MEDIOS DE PAGO
-              </button>
-              <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                <li><a class="dropdown-item" href="#">Debito o credito</a></li>
-                <li><a class="dropdown-item" href="#">Billetera Virtual</a></li>
-                <li><a class="dropdown-item" href="#">Tranferencia</a></li>
-              </ul>
-            </div>
+            <div class="body__text">
+                <h5>Servicio completo de almacenamiento y logística </h5>
+                <table >
+                <tbody">
+                <tr>
+                <td >
+                <p>Almacenamiento de stock</p>
+                </td>
+                <td>
+                <p>Guardamos tus productos en nuestro centro de almacenamiento.</p>
+                </td>
+                </tr>
+                <tr >
+                <td >
+                <p>Preparación de paquetes</p>
+                </td>
+                <td >
+                <p>Imprimimos las etiquetas y embalamos los productos para el envío.</p>
+                </td>
+                </tr>
+                <tr >
+                <td >
+                <p>Envíos rápidos</p>
+                </td>
+                <td >
+                <p>Entregamos tus productos al día siguiente.</p>
+                </td>
+                </tr>
+                </tbody>
+                </table>
+           </div>
           </div>
         </div>
+<!-- COMO COMPRAR? -->
+        <div class="offcanvas offcanvas-start" tabindex="-1" id="comocomprar"
+        aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasExampleLabel">COMO COMPRAR?</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <div>
+             <!-- INFO DE COMPRA -->
+            <article>
+                <section class="info-slide">
+                    <div class="info__item">
+                        <img src="../img/img_main/payment.svg" alt="">
+                        <h3>Paga con tarjeta o en efectivo</h3>
+                        <p>Con Mercado Pago, tenes cuotas sin interes</p>
+                    </div>
+    
+                    <div class="info__item2">
+                        <img src="../img/img_main/shipping.svg" alt="">
+                        <h3>Recibi tu produto</h3>
+                        <p>Elegí Mercado Envíos y seguí tu compra hasta que llegue a tus manos.</p>
+                    </div>
+                    <div class="info__item">
+                        <img src="../img/img_main/protected.svg" alt="">
+                        <h3>Compra protegida</h3>
+                        <p>Te acompañamos hasta que recibas lo que compraste. Y si no es lo que esperabas, te devolvemos el
+                            dinero</p>
+                    </div>
+                </section>
+    
+            </article>
+          </div>
+         
+        </div>
+      </div>
+
+<!-- FORMAS DE PAGO -->
+      <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+      aria-labelledby="offcanvasExampleLabel">
+      <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasExampleLabel">FORMAS DE PAGO</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+        <!-- <div class="body__text"> 
+        Te ofrecemos varias Opciones de pago    
+        </div> -->
+        <div class="body__text">
+            <h4>Puedes pagar con</h4>
+            
+            <select>
+                <option>Debito automatico</option>
+                <option>Tarjeta Credito</option>
+                <option>Uala</option>
+                <option selected>Mercado Pago</option>
+                <option>Pago Fácil</option>
+            </select>
+        </div>
+        
+      </div>
+    </div>
+
       </div>
       <!--___ aplicando offcanvas___ -->
         <!-- <section class="productContainer"> -->     
@@ -153,12 +235,12 @@
                             <h4>Material</h4>
                             <ul>
                                 </li><label>
-                                    <input type="radio" name="turno">Metal
+                                    <input  type="radio" name="turno">Metal
                                 </label>
                                 </li>
                                 <li>
                                     <label>
-                                        <input type="radio" name="turno">Acetato
+                                        <input  type="radio" name="turno">Acetato
                                     </label>
                                 </li>
                                 <li>
@@ -404,30 +486,7 @@
                 </article>
             </section>
 
-            <article>
-
-                <!-- INFO DE COMPRA -->
-                <section class="info-slide">
-                    <div class="info__item">
-                        <img src="../img/img_main/payment.svg" alt="">
-                        <h3>Paga con tarjeta o en efectivo</h3>
-                        <p>Con Mercado Pago, tenes cuotas sin interes</p>
-                    </div>
-    
-                    <div class="info__item2">
-                        <img src="../img/img_main/shipping.svg" alt="">
-                        <h3>Recibi tu produto</h3>
-                        <p>Elegí Mercado Envíos y seguí tu compra hasta que llegue a tus manos.</p>
-                    </div>
-                    <div class="info__item">
-                        <img src="../img/img_main/protected.svg" alt="">
-                        <h3>Compra protegida</h3>
-                        <p>Te acompañamos hasta que recibas lo que compraste. Y si no es lo que esperabas, te devolvemos el
-                            dinero</p>
-                    </div>
-                </section>
-    
-            </article>
+            
         </section>    
 
 </main>    

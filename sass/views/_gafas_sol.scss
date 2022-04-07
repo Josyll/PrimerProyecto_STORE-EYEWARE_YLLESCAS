@@ -21,29 +21,118 @@
 }
 
 
-/* este boton off canva se aplico con bootstrap */
+/* este boton off canva modificando bootstrap */
 .btn-primary:hover {
     color: #fff;
     background-color: #2d302e;
     border-color: white;
 }
 
-/*-- este boton off canva se aplico con bootstrap-- */
 
-.formContainer {
+
+/*-- este boton off canva  modificandobootstrap-- */
+.offcanvas-end{
+    width: 18.75rem;
+}
+.offcanvas-body{
+    background-color: #f4f4f4;
+    width: 100%;
+    padding: 1rem;
+
+    // ENVIOS FULL
+    .body__text{
+        padding: 1rem;
+
+        h5{margin-bottom: 1rem;}
+
+        table{
+            width: 100%;
+            border-collapse: collapse;
+            border: 1px solid;
+            border-color: #ececec;
+            text-align: center;
+
+            td{    
+                padding: 15px;
+                border: 1px solid #ececec;
+                text-align: left;
+            }
+        }
+        
+        
+    }
+
+    // COMO COMPRAR?
+.info-slide {
     background-color: white;
+    @include flex(column, wrap,center,center,);
     width: 100%;
 
+    .info__item {
+        width: 30rem;
+        height: 16rem;
+        text-align: center;
+        padding-top: 20px;
+
+        img {
+            width: 56px;
+            height: 49px;
+        }
+
+        h3 {
+            font-size: 15px;
+            text-align: center;
+
+        }
+
+        p {
+            font-size: 12px;
+            text-align: center;
+
+        }
+
+    }
+
+    .info__item2 {
+        @extend .info__item;
+    }
+
+
+
+}
+
+
+        
+
     form {
-        @include flex(row, wrap,center,center,);
+        @include flex(column, wrap,center,center,);
         .formContainer__box {
-            padding: 30px;
+            padding: 1.5rem;
+            
         
         }
         
     }
+    .formContainer__box{
+        width: 80%;
+
+        input{
+            margin-right: 0.625rem;
+        }
+        
+    }    
     
+
 }
+
+
+    
+    
+    
+
+    
+    
+
 
 
 /* cards product  Aplicando Map-get a Gap*/

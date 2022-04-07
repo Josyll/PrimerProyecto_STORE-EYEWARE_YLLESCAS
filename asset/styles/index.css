@@ -169,7 +169,7 @@ header {
   background-color: white;
   text-align: center;
   line-height: 50px;
-  letter-spacing: 0.5em; }
+  letter-spacing: 0.35em; }
 
 /* esto es de bootstrap */
 .offcanvas__main {
@@ -282,30 +282,6 @@ header {
         font-size: smaller; }
 
 /* FIN CARDS */
-/* INFO COMPRA */
-.info-slide {
-  background-color: white;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 100%; }
-  .info-slide .info__item, .info-slide .info__item2 {
-    width: 30rem;
-    height: 16rem;
-    text-align: center;
-    padding-top: 20px; }
-    .info-slide .info__item img, .info-slide .info__item2 img {
-      width: 56px;
-      height: 49px; }
-    .info-slide .info__item h3, .info-slide .info__item2 h3 {
-      font-size: 15px;
-      text-align: center; }
-    .info-slide .info__item p, .info-slide .info__item2 p {
-      font-size: 12px;
-      text-align: center; }
-
 @media screen and (max-width: 760px) {
   .ofertas__container {
     display: flex;
@@ -338,24 +314,68 @@ header {
   align-items: center;
   margin-top: 10px; }
 
-/* este boton off canva se aplico con bootstrap */
+/* este boton off canva modificando bootstrap */
 .btn-primary:hover {
   color: #fff;
   background-color: #2d302e;
   border-color: white; }
 
-/*-- este boton off canva se aplico con bootstrap-- */
-.formContainer {
-  background-color: white;
-  width: 100%; }
-  .formContainer form {
+/*-- este boton off canva  modificandobootstrap-- */
+.offcanvas-end {
+  width: 18.75rem; }
+
+.offcanvas-body {
+  background-color: #f4f4f4;
+  width: 100%;
+  padding: 1rem; }
+  .offcanvas-body .body__text {
+    padding: 1rem; }
+    .offcanvas-body .body__text h5 {
+      margin-bottom: 1rem; }
+    .offcanvas-body .body__text table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid;
+      border-color: #ececec;
+      text-align: center; }
+      .offcanvas-body .body__text table td {
+        padding: 15px;
+        border: 1px solid #ececec;
+        text-align: left; }
+  .offcanvas-body .info-slide {
+    background-color: white;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%; }
+    .offcanvas-body .info-slide .info__item, .offcanvas-body .info-slide .info__item2 {
+      width: 30rem;
+      height: 16rem;
+      text-align: center;
+      padding-top: 20px; }
+      .offcanvas-body .info-slide .info__item img, .offcanvas-body .info-slide .info__item2 img {
+        width: 56px;
+        height: 49px; }
+      .offcanvas-body .info-slide .info__item h3, .offcanvas-body .info-slide .info__item2 h3 {
+        font-size: 15px;
+        text-align: center; }
+      .offcanvas-body .info-slide .info__item p, .offcanvas-body .info-slide .info__item2 p {
+        font-size: 12px;
+        text-align: center; }
+  .offcanvas-body form {
+    display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center; }
-    .formContainer form .formContainer__box {
-      padding: 30px; }
+    .offcanvas-body form .formContainer__box {
+      padding: 1.5rem; }
+  .offcanvas-body .formContainer__box {
+    width: 80%; }
+    .offcanvas-body .formContainer__box input {
+      margin-right: 0.625rem; }
 
 /* cards product  Aplicando Map-get a Gap*/
 .cardFlexProduct {
